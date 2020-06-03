@@ -23,5 +23,4 @@ int main(void)
         printf("Same\n");
     else
         printf("Different\n");
-
 }
