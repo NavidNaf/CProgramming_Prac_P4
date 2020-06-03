@@ -22,4 +22,7 @@ int main (void)
 
     printf("%s\n", s);
     printf("%s\n", t);
+
+    //deallocating memory used in malloc
+    free(t);
 }
