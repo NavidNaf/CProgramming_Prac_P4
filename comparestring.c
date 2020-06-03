@@ -2,9 +2,9 @@
 #include <string.h>
 #include <cs50.h>
 
-int compare_string_p(char* s, char* t)
+int compare_string_p(char *s, char *t)
 {
-    while(*s == *t)
+    while (*s == *t)
     {
         //if any of them are null, break
         if (*s == '\0' || *t == '\0')
@@ -21,15 +21,14 @@ int compare_string_p(char* s, char* t)
         return -1;
 }
 
-int main (void)
+int main(void)
 {
     char *s = get_string("i: ");
     char *t = get_string("j: ");
 
-    int comparison = compare_string_p(s,t);
+    int comparison = compare_string_p(s, t);
     if (comparison == 0)
         printf("Same\n");
     else
         printf("Different\n");
-
 }
