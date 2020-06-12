@@ -25,4 +25,9 @@ int main(void)
         average[i] = (mathe[i] + english[i] + bangla[i]) / 3;
         fprintf(avg, "%i %i\n", roll[i], average[i]);
     }
+
+    fclose(math);
+    fclose(eng);
+    fclose(bang);
+    fclose(avg);
 }
